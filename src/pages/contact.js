@@ -6,13 +6,21 @@ const Contact = () => {
   const router = useRouter();
   const { register, handleSubmit, watch } = useForm();
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&');
+  };
+
   const onSubmit = (data, e) => {
     const { name, email, message } = data;
     e.preventDefault();
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: JSON.stringify({ 'form-name': 'contact', name, email, message }),
+      body: encode({ 'form-name': 'contact', ...data }),
     })
       .then(() => router.push('/success'))
       .catch((error) => alert(error));
