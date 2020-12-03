@@ -1,6 +1,26 @@
 import Layout from '../components/layout';
+import { useRouter } from 'next/router';
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    const router = useRouter();
+    const form = e.target;
+    const formData = {
+      test: 'test',
+      test2: 'test2',
+    };
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...formData,
+      }),
+    })
+      .then(() => push(form.getAttribute('action')))
+      .catch((error) => alert(error));
+  };
   return (
     <Layout>
       <div className='container mx-auto flex flex-col justify-center items-center'>
@@ -14,6 +34,7 @@ const Contact = () => {
             method='POST'
             data-netlify='true'
             action='/success'
+            onSubmit={handleSubmit}
           >
             <label
               className='text-base text-gray-500 col-span-2 md:col-span-1'
