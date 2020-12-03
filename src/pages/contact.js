@@ -12,6 +12,7 @@ const Contact = () => {
           </h2>
           <form
             className='grid grid-cols-2 gap-3'
+            name='contact'
             method='POST'
             data-netlify='true'
             action='/success'
@@ -51,7 +52,10 @@ const Contact = () => {
                 id='message'
               ></textarea>
             </label>
-            <button className='bg-blue-500 rounded text-white font-bold  py-3 w-1/2'>
+            <button
+              className='bg-blue-500 rounded text-white font-bold  py-3 w-1/2'
+              type='submit'
+            >
               Submit
             </button>
           </form>
