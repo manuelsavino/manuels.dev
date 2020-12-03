@@ -39,6 +39,7 @@ const Contact = () => {
             method='POST'
             data-netlify='true'
             onSubmit={handleSubmit(onSubmit)}
+            action='/'
           >
             <label
               className='text-base text-gray-500 col-span-2 md:col-span-1'
