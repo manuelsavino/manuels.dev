@@ -1,8 +1,10 @@
 import Layout from '../components/layout';
 import { useRouter } from 'next/router';
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
   const router = useRouter();
+  const { register, handleSubmit, watch, errors } = useForm();
 
   const encode = (data) => {
     return Object.keys(data)
@@ -12,20 +14,13 @@ const Contact = () => {
       .join('&');
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const formData = {
-      test: 'test',
-      test2: 'test2',
-    };
-
+  const onSubmit = (data) => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': form.getAttribute('name'),
-        ...formData,
+        'form-name': 'Contact',
+        ...data,
       }),
     })
       .then(() => router.push('/success'))
@@ -43,7 +38,7 @@ const Contact = () => {
             name='contact'
             method='POST'
             data-netlify='true'
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit(onSubmit)}
           >
             <label
               className='text-base text-gray-500 col-span-2 md:col-span-1'
@@ -55,6 +50,7 @@ const Contact = () => {
                 type='text'
                 name='name'
                 id='name'
+                ref={register}
               ></input>
             </label>
             <label
@@ -67,6 +63,7 @@ const Contact = () => {
                 type='email'
                 name='email'
                 id='email'
+                ref={register}
               ></input>
             </label>
             <label
@@ -78,6 +75,7 @@ const Contact = () => {
                 className='border-b border-gray-300 w-full h-28 focus:outline-none focus:border-blue-500'
                 name='message'
                 id='message'
+                ref={register}
               ></textarea>
             </label>
             <button
