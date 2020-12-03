@@ -15,7 +15,6 @@ const Contact = () => {
   };
 
   const onSubmit = (data, e) => {
-    const { name, email, message } = data;
     e.preventDefault();
     fetch('/', {
       method: 'POST',
