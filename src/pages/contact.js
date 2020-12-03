@@ -4,12 +4,12 @@ import { useForm } from 'react-hook-form';
 
 const Contact = () => {
   const router = useRouter();
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, watch } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, e) => {
     const { name, email, message } = data;
-
-    fetch('/', {
+    e.preventDefault();
+    fetch('/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: JSON.stringify({ 'form-name': 'contact', name, email, message }),
@@ -32,6 +32,7 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             action='/'
           >
+            <input type='hidden' name='contact' value='name_of_my_form' />
             <label
               className='text-base text-gray-500 col-span-2 md:col-span-1'
               htmlFor='name'
