@@ -4,28 +4,20 @@ import { useForm } from 'react-hook-form';
 
 const Contact = () => {
   const router = useRouter();
-  const { register, handleSubmit, watch, errors } = useForm();
-
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-      )
-      .join('&');
-  };
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
+    const { name, email, message } = data;
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': 'Contact',
-        ...data,
-      }),
+      body: JSON.stringify({ 'form-name': 'contact', name, email, message }),
     })
       .then(() => router.push('/success'))
       .catch((error) => alert(error));
   };
+
   return (
     <Layout>
       <div className='container mx-auto flex flex-col justify-center items-center'>
@@ -36,7 +28,6 @@ const Contact = () => {
           <form
             className='grid grid-cols-2 gap-3'
             name='contact'
-            method='POST'
             data-netlify='true'
             onSubmit={handleSubmit(onSubmit)}
             action='/'
