@@ -7,8 +7,8 @@ const Uses = () => {
         <h2 className='text-gray-800 text-5xl font-extrabold font-sans mt-10 mb-4'>
           Uses
         </h2>
-        <img className='w-2/3' src='./uses.jpg' />
-        <div className='w-2/3'>
+        <img className='md:w-2/3 px-5 md:px-0' src='./uses.jpg' />
+        <div className='w-full md:w-2/3 px-5 md:px-0'>
           <h3 className='text-gray-800 text-4xl font-extrabold font-sans mt-10 mb-4'>
             Hardware
           </h3>
