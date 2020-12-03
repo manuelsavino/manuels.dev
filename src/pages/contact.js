@@ -2,8 +2,18 @@ import Layout from '../components/layout';
 import { useRouter } from 'next/router';
 
 const Contact = () => {
+  const router = useRouter();
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&');
+  };
+
   const handleSubmit = (e) => {
-    const router = useRouter();
+    e.preventDefault();
     const form = e.target;
     const formData = {
       test: 'test',
@@ -18,7 +28,7 @@ const Contact = () => {
         ...formData,
       }),
     })
-      .then(() => push(form.getAttribute('action')))
+      .then(() => router.push('/success'))
       .catch((error) => alert(error));
   };
   return (
@@ -33,7 +43,6 @@ const Contact = () => {
             name='contact'
             method='POST'
             data-netlify='true'
-            action='/success'
             onSubmit={handleSubmit}
           >
             <label
