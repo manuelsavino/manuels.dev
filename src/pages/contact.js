@@ -1,5 +1,3 @@
-import Nav from '../components/nav';
-import Footer from '../components/footer';
 import Layout from '../components/layout';
 
 const Contact = () => {
