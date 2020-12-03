@@ -6,7 +6,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ['./src/pages/*.js', './src/components/*.js'],
+  purge: ['./src/pages/*.js', './src/components/**/*.js'],
   theme: {
     colors: {
       teal: colors.teal,
