@@ -2,9 +2,11 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   darkMode: 'class',
-  // purge: {
-  //   // content: ['./components/**/*.js', './pages/**/*.js'],
-  // },
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: false,
   theme: {
     colors: {
       teal: colors.teal,

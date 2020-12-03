@@ -9,7 +9,7 @@ module.exports = {
         ? {
             // the paths to all template files
             content: [
-              './pages/**/*.{js,jsx,ts,tsx}',
+              './pages/*.{js,jsx,ts,tsx}',
               './components/**/*.{js,jsx,ts,tsx}',
             ],
             // function used to extract class names from the templates
