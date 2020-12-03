@@ -32,7 +32,7 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             action='/'
           >
-            <input type='hidden' name='contact' value='name_of_my_form' />
+            <input type='hidden' name='form-name' value='contact' />
             <label
               className='text-base text-gray-500 col-span-2 md:col-span-1'
               htmlFor='name'
