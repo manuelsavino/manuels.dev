@@ -9,7 +9,7 @@ const Contact = () => {
   const onSubmit = (data, e) => {
     const { name, email, message } = data;
     e.preventDefault();
-    fetch('/contact', {
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: JSON.stringify({ 'form-name': 'contact', name, email, message }),
