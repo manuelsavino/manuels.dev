@@ -1,0 +1,12 @@
+.card {
+  overflow: hidden;
+}
+
+.card > .details {
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.card:hover > .details {
+  transform: translateY(0);
+}
