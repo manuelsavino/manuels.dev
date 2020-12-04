@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <Layout>
       <div className='container mx-auto flex flex-col justify-center items-center'>
-        <div className='px-5 w-full md:w-1/2'>
+        <div className='px-5 w-full lg:w-1/2'>
           <h2 className='text-gray-800 text-5xl font-extrabold font-sans my-10'>
             Drop me a Line
           </h2>
