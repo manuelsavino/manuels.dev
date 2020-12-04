@@ -1,16 +1,18 @@
 import Layout from '../components/layout';
+import styles from '../styles/blog.module.css';
 
 const Uses = () => {
   return (
     <Layout>
-      <div className='container mx-auto flex flex-col justify-center items-center'>
-        <h2 className='text-gray-800 text-5xl font-extrabold font-sans mt-10 mb-4'>
+      <div className='container mx-auto flex flex-col justify-center items-center py-5'>
+        <h2 className='text-gray-700 text-5xl font-extrabold font-sans pb-5'>
           Uses
         </h2>
         <img
           className='w-full rounded-lg md:w-8/12 px-5 md:px-0'
           src='/uses.jpg'
         />
+
         <div className='w-full md:w-8/12 px-5 md:px-0'>
           <h3 className='text-gray-800 text-4xl font-extrabold font-sans mt-10 mb-4'>
             Hardware
@@ -77,11 +79,6 @@ const Uses = () => {
                 rel='noreferrer'
               >
                 Nest Hub
-              </a>
-            </li>
-            <li>
-              <a href='https://wyze.com/' target='_blank' rel='noreferrer'>
-                Currently using a Wyze Cam V2 as a webcam
               </a>
             </li>
             <li>
