@@ -7,7 +7,10 @@ const Uses = () => {
         <h2 className='text-gray-800 text-5xl font-extrabold font-sans mt-10 mb-4'>
           Uses
         </h2>
-        <img className='w-full md:w-8/12 px-5 md:px-0' src='/uses.jpg' />
+        <img
+          className='w-full rounded-lg md:w-8/12 px-5 md:px-0'
+          src='/uses.jpg'
+        />
         <div className='w-full md:w-8/12 px-5 md:px-0'>
           <h3 className='text-gray-800 text-4xl font-extrabold font-sans mt-10 mb-4'>
             Hardware
