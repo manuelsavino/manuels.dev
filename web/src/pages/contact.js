@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 
 const Contact = () => {
   const router = useRouter();
-  const { register, handleSubmit, watch } = useForm();
+  const { register, handleSubmit, errors } = useForm();
 
   const encode = (data) => {
     return Object.keys(data)
@@ -50,8 +50,11 @@ const Contact = () => {
                 type='text'
                 name='name'
                 id='name'
-                ref={register}
+                ref={register({ required: true })}
               ></input>
+              {errors.name && (
+                <p className='text-xs text-red-500'>Name is Required</p>
+              )}
             </label>
             <label
               className='text-base text-gray-500 col-span-2 md:col-span-1'
@@ -63,8 +66,11 @@ const Contact = () => {
                 type='email'
                 name='email'
                 id='email'
-                ref={register}
+                ref={register({ required: true })}
               ></input>
+              {errors.email && (
+                <p className='text-xs text-red-500'>Email is Required</p>
+              )}
             </label>
             <label
               className='text-base text-gray-500 col-span-2 pt-5'

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "cd web && npm run dev",
     "build": "cd web && npm run build",
-    "start": "cd web && npm start"
+    "start": "cd web && npm start",
+    "studio": "cd studio && npm start"
   },
   "repository": {
     "type": "git",
