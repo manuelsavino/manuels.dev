@@ -8,7 +8,7 @@ const Success = () => {
           Success! 🥳
         </h2>
         <h5 className='text-gray-800 text-2xl  font-sans mt-5 mb-4 text-center'>
-          I will be reaching out back to you shortly!
+          I will be reaching out to you shortly!
         </h5>
       </div>
     </Layout>
