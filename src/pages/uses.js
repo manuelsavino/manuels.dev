@@ -8,10 +8,8 @@ const Uses = () => {
         <h2 className='text-gray-800 text-5xl font-extrabold font-sans mt-10 mb-4'>
           Uses
         </h2>
-        <div className='md:w-2/3 px-5 md:px-0 flex justify-center'>
-          <Image src='/uses.jpg' width='1030' height='674' loading='lazy' />
-        </div>
-        <div className='w-full md:w-2/3 px-5 md:px-0'>
+        <img className='w-full md:w-8/12 px-5 md:px-0' src='/uses.jpg' />
+        <div className='w-full md:w-8/12 px-5 md:px-0'>
           <h3 className='text-gray-800 text-4xl font-extrabold font-sans mt-10 mb-4'>
             Hardware
           </h3>
