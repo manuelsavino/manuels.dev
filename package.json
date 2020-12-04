@@ -4,26 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
-    "start": "next start"
+    "dev": "cd web && npm run dev",
+    "build": "cd web && npm run build",
+    "start": "cd web && npm start"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelsavino/manuels.dev.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "body-scroll-lock": "^3.1.5",
-    "next": "^10.0.3",
-    "postcss": "^8.1.13",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-ga": "^3.3.0",
-    "react-hamburger-menu": "^1.2.1",
-    "react-hook-form": "^6.12.2",
-    "tailwindcss": "^2.0.1"
+  "bugs": {
+    "url": "https://github.com/manuelsavino/manuels.dev/issues"
   },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0"
-  }
+  "homepage": "https://github.com/manuelsavino/manuels.dev#readme"
 }
