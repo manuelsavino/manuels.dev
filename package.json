@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/manuelsavino/manuels.dev/issues"
   },
-  "homepage": "https://github.com/manuelsavino/manuels.dev#readme"
+  "homepage": "https://github.com/manuelsavino/manuels.dev#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }
