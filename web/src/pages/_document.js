@@ -11,6 +11,10 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <link rel='shortcut icon' href='/favicon.ico' />
+          <meta
+            name='description'
+            content="Manuel Savino's site, frontend web developer from Miami, Fl"
+          />
         </Head>
         <body>
           <Main />
