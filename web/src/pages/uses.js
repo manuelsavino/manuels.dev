@@ -38,11 +38,11 @@ const Uses = () => {
             </li>
             <li>
               <a
-                href='https://www.amazon.com/Dell-S2415H-24-Inch-LED-Lit-Monitor/dp/B00M9B3XZW?th=1'
+                href='https://www.amazon.com/Samsung-U32J590-32-Inch-LED-Lit-Monitor/dp/B07CS3JGPC'
                 target='_blank'
                 rel='noreferrer'
               >
-                24 Inch Dell S2415H 1080p Display
+                32 Inch Samsung UJ59 4k Display
               </a>
             </li>
             <li>
@@ -61,6 +61,24 @@ const Uses = () => {
                 rel='noreferrer'
               >
                 Logitech MX-Master 3 Mouse
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://www.logitech.com/en-us/products/webcams/c920-pro-hd-webcam.960-000764.html'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Logitech C920 HD Pro Webcam
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://www.elgato.com/en/gaming/stream-deck'
+                target='_blank'
+                rel='noreferrer'
+              >
+                El Gato Stream Deck
               </a>
             </li>
             <li>

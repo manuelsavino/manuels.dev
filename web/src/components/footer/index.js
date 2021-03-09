@@ -48,26 +48,6 @@ export default function Footer() {
         <p className='text-gray-700 text-center'>
           &copy; {new Date().getFullYear()} Manuel Savino
         </p>
-        <p className='text-gray-700 text-center'>
-          Built with{' '}
-          <a
-            className='text-blue-500 pr-1'
-            href='https://nextjs.org/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            NextJs
-          </a>
-          and
-          <a
-            className='text-teal-500 pl-1'
-            href='https://tailwindcss.com/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Tailwind
-          </a>
-        </p>
       </section>
     </footer>
   );
