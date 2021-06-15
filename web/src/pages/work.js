@@ -101,6 +101,7 @@ const Work = () => {
               <h2 className='text-gray-800 text-xl font-extrabold font-sans'>
                 CH Global Construction
               </h2>
+
               <a
                 className='text-blue-500'
                 href='https://chglobalconstruction.com/'
@@ -109,6 +110,7 @@ const Work = () => {
               >
                 www.chglobalconstruction.com
               </a>
+              <p>Employer - CREATIVECORE</p>
               <h5 className='font-bold'>Tech Used</h5>
               <p className='text-sm leading-snug text-center'>
                 GatsbyJS, Chakra-ui, Javascript, HTML5, Lambda Functions
