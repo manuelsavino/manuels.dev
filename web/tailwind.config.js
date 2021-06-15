@@ -17,6 +17,8 @@ module.exports = {
       black: colors.black,
       yellow: colors.yellow,
       red: colors.red,
+      orange: colors.orange,
+      'spirit-yellow': '#ffec00',
     },
   },
 };

@@ -8,7 +8,7 @@ const Work = () => {
         <h2 className='text-gray-800 text-5xl font-extrabold font-sans mt-10 mb-4'>
           Some of my work
         </h2>
-        <h5>Here are a few projects I've worked on recently.</h5>
+        <p>Here are a few projects I've worked on recently.</p>
         <div className='container px-5 md:px-0 max-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-10'>
           <div
             className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center  bg-gradient-to-b from-pink-700 via-red-500 to-pink-500`}
@@ -89,27 +89,29 @@ const Work = () => {
           </div>
 
           <div
-            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center  bg-gradient-to-b from-yellow-300  to-yellow-500`}
+            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center  bg-gradient-to-b from-orange-500  to-orange-400`}
           >
-            <img className='w-52' src='./se_logo.png' />
+            <img
+              className='w-40'
+              src='https://chglobalconstruction.com/images/white-logo.png'
+            />
             <div
               className={`${styles.details} absolute top-0 left-0 bg-white w-full min-h-full flex p-5 flex-col items-center justify-center box-border`}
             >
               <h2 className='text-gray-800 text-xl font-extrabold font-sans'>
-                Storage Express
+                CH Global Construction
               </h2>
               <a
                 className='text-blue-500'
-                href='http://storagexps.com/'
+                href='https://chglobalconstruction.com/'
                 target='_blank'
                 rel='noreferrer'
               >
-                www.storagexps.com
+                www.chglobalconstruction.com
               </a>
               <h5 className='font-bold'>Tech Used</h5>
               <p className='text-sm leading-snug text-center'>
-                Javascript, CSS3, HTML5, Bootstrap, JQuery, Node, Express,
-                NodeMailer, Google Maps, Netlify
+                GatsbyJS, Chakra-ui, Javascript, HTML5, Lambda Functions
               </p>
             </div>
           </div>
@@ -141,33 +143,7 @@ const Work = () => {
               </p>
             </div>
           </div>
-          <div
-            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center  bg-gradient-to-b from-blue-600  to-blue-800`}
-          >
-            <h4 className='font-bold text-3xl text-white text-center'>
-              Web Assets Library
-            </h4>
-            <div
-              className={`${styles.details} absolute top-0 left-0 bg-white w-full min-h-full flex p-5 flex-col items-center justify-center box-border`}
-            >
-              <h2 className='text-gray-800 text-xl font-extrabold font-sans'>
-                Web Assets Library
-              </h2>
 
-              <a
-                className='text-blue-500'
-                href='https://images.manuels.dev/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                Live Site
-              </a>
-              <h5 className='font-bold'>Tech Used</h5>
-              <p className='text-sm leading-snug text-center'>
-                React, TailwindCSS, Javascript, CCS3, HTML5, Netlify
-              </p>
-            </div>
-          </div>
           <div
             className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center  bg-gradient-to-b from-blue-500  to-blue-500`}
           >
@@ -195,60 +171,82 @@ const Work = () => {
               </p>
             </div>
           </div>
+        </div>
+        <h2 className='text-gray-800 text-5xl font-extrabold font-sans mt-10 mb-4 text-center'>
+          Cloned using Tailwind CSS
+        </h2>
+        <p className='text-center'>
+          For fun, often times I like to clone websites just using Tailwind CSS,
+          here's a few I've done
+        </p>
+        <div className='container px-5 md:px-0 max-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-10'>
           <div
-            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center bg-cover`}
-            style={{ backgroundImage: 'url(./masters.jpg)' }}
+            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center `}
           >
-            <h4 className='font-bold text-3xl text-white text-center'>
-              Masters Landing Page
-            </h4>
+            <img
+              className='w-52'
+              src='https://www.ziprecruiter.com/zrs/f810ae13/img/logos/ziprecruiter-blacktext.svg'
+            />
             <div
               className={`${styles.details} absolute top-0 left-0 bg-white w-full min-h-full flex p-5 flex-col items-center justify-center box-border`}
             >
               <h2 className='text-gray-800 text-xl font-extrabold font-sans'>
-                Masters Landing Page
+                Zip Recruiter
               </h2>
-
               <a
                 className='text-blue-500'
-                href='https://manuelsavino.github.io/MBAlandingPage/'
+                href='https://play.tailwindcss.com/Fcme56XMXW?layout=preview'
                 target='_blank'
                 rel='noreferrer'
               >
-                Live Site
+                View on Tailwind Play
               </a>
-              <h5 className='font-bold'>Tech Used</h5>
-              <p className='text-sm leading-snug text-center'>
-                HTML5, CSS3, Bootstrap, Github Pages
-              </p>
             </div>
           </div>
           <div
-            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center bg-cover`}
-            style={{ backgroundImage: 'url(./book.jpg)' }}
+            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center bg-spirit-yellow`}
           >
-            <h4 className='font-bold text-3xl text-white text-center'>
-              Sample Book Site
-            </h4>
+            <img
+              className='w-52'
+              src='https://www.spirit.com/assets/img/global/spirit-logo-black.svg'
+            />
             <div
               className={`${styles.details} absolute top-0 left-0 bg-white w-full min-h-full flex p-5 flex-col items-center justify-center box-border`}
             >
               <h2 className='text-gray-800 text-xl font-extrabold font-sans'>
-                Sample Book Site
+                Spirit Airlines
               </h2>
-
               <a
                 className='text-blue-500'
-                href='https://manuelsavino.github.io/JsBookSite/'
+                href='https://play.tailwindcss.com/WPiYASAuyK?layout=preview'
                 target='_blank'
                 rel='noreferrer'
               >
-                Live Site
+                View on Tailwind Play
               </a>
-              <h5 className='font-bold'>Tech Used</h5>
-              <p className='text-sm leading-snug text-center'>
-                HTML5, CSS3, Bootstrap, Github Pages
-              </p>
+            </div>
+          </div>
+          <div
+            className={`${styles.card} border rounded-lg border-gray-100 shadow-sm h-48 border-box relative flex items-center justify-center`}
+          >
+            <img
+              className='w-52'
+              src='https://www.aexp-static.com/cdaas/one/statics/axp-static-assets/1.8.0/package/dist/img/logos/dls-logo-line.svg'
+            />
+            <div
+              className={`${styles.details} absolute top-0 left-0 bg-white w-full min-h-full flex p-5 flex-col items-center justify-center box-border`}
+            >
+              <h2 className='text-gray-800 text-xl font-extrabold font-sans'>
+                American Express
+              </h2>
+              <a
+                className='text-blue-500'
+                href='https://play.tailwindcss.com/5lLVyUqWuD?layout=preview'
+                target='_blank'
+                rel='noreferrer'
+              >
+                View on Tailwind Play
+              </a>
             </div>
           </div>
         </div>
